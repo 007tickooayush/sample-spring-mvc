@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class SampleController {
-	String message = "Welcome to Spring MVC!";
+	String message = "Sample Spring MVC Project!";
 
 	@RequestMapping("/hello")
 	public ModelAndView showMessage(
