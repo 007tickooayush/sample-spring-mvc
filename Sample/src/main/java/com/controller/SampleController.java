@@ -19,6 +19,16 @@ public class SampleController {
 		mv.addObject("name", name);
 		return mv;
 	}
+
+	@RequestMapping("/getObjects")
+	public ModelAndView getObjects(ModelAndView modelAndView) {
+		List<String> names = Arrays.asList("Hellsent","Creston");
+		
+		modelAndView.setViewName("getObjs");
+		modelAndView.addObject("names",names);
+		
+		return modelAndView;
+	}
 	
 	@RequestMapping("/")
 	public ModelAndView indexPage() {
